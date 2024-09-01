@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { ProductType } from "@/types/product";
+import { Product } from "@/types/product";
 import { useCart } from "@/hooks/use-cart";
 import { useLovedProducts } from "@/hooks/use-loved-products";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 
 interface LovedItemProductProps {
-  product: ProductType;
+  product: Product;
 }
 
 const LovedItemProduct = (props: LovedItemProductProps) => {

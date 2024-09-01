@@ -1,9 +1,9 @@
-interface ProductType {
+interface Product {
   Style: string;
   format: string;
 }
 
-const ProductStyleFormat = (props: ProductType) => {
+const ProductStyleFormat = (props: Product) => {
   const { Style,  format} = props;
 
   return (

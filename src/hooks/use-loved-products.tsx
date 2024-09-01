@@ -3,13 +3,13 @@ import { persist, createJSONStorage } from "zustand/middleware";
 import { Product } from "@/types/product";
 import { toast } from "@/components/ui/use-toast";
 
-interface UseLovedProductType {
+interface UseLovedProduct {
   lovedItems: Product[];
   addLovedItem: (data: Product) => void;
   removeLovedItem: (id: number) => void;
 }
 
-export const useLovedProducts = create<UseLovedProductType>()(
+export const useLovedProducts = create<UseLovedProduct>()(
   persist(
     (set, get) => ({
       lovedItems: [],

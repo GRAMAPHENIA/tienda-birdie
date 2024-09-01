@@ -1,4 +1,4 @@
-import { ProductType } from "@/types/product";
+import { Product } from "@/types/product";
 // import { useRouter } from "next/navigation";
 import { useCart } from "@/hooks/use-cart";
 import { formatPrice } from "@/lib/formatPrice";
@@ -8,7 +8,7 @@ import ProductStyleFormat from "@/components/shared/product-style-format";
 import ProductImageMiniature from "@/components/shared/product-image-miniature";
 
 interface CartItemProps {
-  product: ProductType;
+  product: Product;
 }
 
 const CartItem = (props: { product: any }) => {
